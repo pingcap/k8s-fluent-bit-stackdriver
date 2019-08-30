@@ -4,7 +4,7 @@ This repository is for explaining how to configure a GKE Kubernetes cluster to c
 
 ## Why Fluent Bit vs Fluentd
 
-Fluentd is a log collector, processor, and aggregator. In GKE, aggregation by Fluentd is not necessary as the logs will be forwarded to Stackdriver by default. The Fluentd process can be quite resource hungry and end up consuming a non-trivial share of CPU and RAM available in the cluster.
+Fluentd is a log collector, processor, and aggregator. The Fluentd process can be quite resource hungry and end up consuming a non-trivial share of CPU and RAM available in the cluster. In GKE, aggregation by Fluentd is not necessary as the logs will be forwarded and then aggregated by Stackdriver by default, therefore the aggregation feature is not necessary.
 Fluent Bit is based on the design and architecture of Fluentd, but restricts itself to log collecting, processing, and forwarding. It is more performant and less resource intensive than Fluentd.
 See [this page](https://docs.fluentbit.io/manual/about/fluentd_and_fluentbit) for a side-by-side comparison of both projects.
 
