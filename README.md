@@ -10,7 +10,7 @@ See [this page](https://docs.fluentbit.io/manual/about/fluentd_and_fluentbit) fo
 
 ## Creating a cluster
 
-See [this page](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-container-cluster) for instructions on how to create a cluster via `gcloud`. The only difference is that the `--no-enable-cloud-logging` flag must be used when creating the cluster. This will disable the default logging setup.
+See [this page](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-container-cluster) for instructions on how to create a cluster via `gcloud`. The only difference is that the `--no-enable-cloud-logging` flag must be used when creating the cluster. This will disable the default logging setup. This setting can be updated on a running cluster, including from the UI.
 
 ## Service accounts
 
